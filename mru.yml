@@ -1,0 +1,14 @@
+--- 
+  -  hosts: all
+     become: yes
+     tasks:
+      - name: "I want to install webeserver"
+        apt: 
+         name: apache2 
+         state: present  
+      - name: "I want to install git" 
+        apt:
+         name: git 
+         state: present 
+
+    
